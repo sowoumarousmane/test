@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img src="img1.jpg" alt="image1" id="slide1" >
+
+    <script>
+    
+    var images=["img1.jpg","img2.jpg","img3.jpg","img4.jpg"];
+    var i = 0;
+    setInterval(function ()
+    {
+        document.getElementById('slide1').src=images[i];
+        i++;
+        if(i==4) i=0;
+    },1000);
+
+    alert("oumar ousmane sow bonjour");
+    </script>
+
+
+    <figure style="border:aqua 5px solid;"></figure>
+</body>
+</html>
